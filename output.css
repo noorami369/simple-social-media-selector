@@ -168,28 +168,11 @@
   }
 }
 @layer utilities {
-  .fixed {
-    position: fixed;
-  }
-  .top-1\/2 {
-    top: calc(1/2 * 100%);
-  }
-  .top-50 {
-    top: calc(var(--spacing) * 50);
-  }
-  .left-1\/2 {
-    left: calc(1/2 * 100%);
-  }
   .flex {
     display: flex;
   }
   .w-\[300px\] {
     width: 300px;
-  }
-  .translate-1\/2 {
-    --tw-translate-x: calc(1/2 * 100%);
-    --tw-translate-y: calc(1/2 * 100%);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -276,21 +259,6 @@ body {
 .rotated {
   transform: rotate(180deg);
 }
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -322,9 +290,6 @@ body {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
